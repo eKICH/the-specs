@@ -1,0 +1,12 @@
+<div class="testimony-container">
+
+    <div class="testimony-title">
+        <h2>Testimonies</h2>
+    </div>
+        <div class="testimonies">
+            <div class="testimony" *ngFor="let test of testimony">
+                <p>{{ test.description }}</p>
+                <h4><img [src]="test.img" alt=""/> {{ test.name }} <span>- {{ test.location }}</span></h4>
+            </div>
+        </div>
+</div>

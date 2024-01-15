@@ -1,0 +1,11 @@
+<div class="categories-banner">
+    <div class="categories-title">
+        <h2>Categories</h2>
+    </div>
+    <div class="categories">
+        <div class="category-item" *ngFor="let cat of categories">
+            <img src={{cat.imgUrl}}>
+            <h4>{{ cat.title }}</h4>
+        </div>
+    </div>
+</div>

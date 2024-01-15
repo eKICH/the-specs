@@ -1,0 +1,22 @@
+<div class="sub-footer">
+    <div class="sub-footer-item">
+        <h2>About</h2>
+        <p>{{ context }}</p>
+    </div>
+    <div class="sub-footer-item">
+        <h2>Quick Links</h2>
+        <div class="sub-footer-links">
+            <a [routerLink]="'home'" [routerLinkActive]="'active'">Home</a>
+            <a [routerLink]="'products'" [routerLinkActive]="'active'">Products</a>
+        </div>
+    </div>
+    <div class="sub-footer-item">
+        <h2>Socials</h2>
+        <div class="sub-footer-socials">
+            <a href="#"><fa-icon [icon]="facebook"></fa-icon></a>
+            <a href="#"><fa-icon [icon]="x"></fa-icon></a>
+            <a href="#"><fa-icon [icon]="insta"></fa-icon></a>
+            <a href="#"><fa-icon [icon]="linkedin"></fa-icon></a>
+        </div>
+    </div>
+</div>

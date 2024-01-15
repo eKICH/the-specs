@@ -1,0 +1,46 @@
+@use '../../../../partials/variables';
+
+.categories-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categories-title {
+    margin-top: 30px;
+
+    h2 {
+        color: variables.$button-color;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}
+
+.categories {
+    margin: 40px 0 50px 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    .category-item {
+        width: 250px;
+        height: 250px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        h4 {
+            font-weight: 400;
+        }
+    }
+}
+
+.category-item:hover {
+    transform: scale(1.1);
+}
