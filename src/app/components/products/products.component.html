@@ -7,7 +7,7 @@
             <div class="content">
                 <h4>{{ prod.model }}</h4>
                 <p>{{ prod.desc}}</p>
-                <a href="">View Specs</a>
+                <a [routerLink]="'/products/product/' + prod.id">View Specs</a>
             </div>
         </div>
         }

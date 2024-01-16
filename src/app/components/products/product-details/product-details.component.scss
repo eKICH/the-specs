@@ -1,0 +1,47 @@
+@use '../../../../partials/variables';
+
+.product-details-container {
+    display: flex;
+    flex-flow: column;
+    gap: 50px;
+
+    .product-model {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0 0 0;
+
+        h4 {
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
+
+        p {
+            font-weight: 300;
+        }
+    }
+
+    .specs-features {
+        display: flex;
+        justify-content: space-evenly;
+        margin: -30px 0 30px 0;
+        padding: 0 30px;
+
+        .features,
+        .specs {
+            width: 500px;
+
+            ul {
+
+                li {
+                    margin-left: 20px;
+                }
+                
+            }
+
+            h3 {
+                font-weight: 500;
+            }
+        }
+    }
+}
