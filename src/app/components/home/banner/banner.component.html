@@ -4,7 +4,7 @@
         <p>{{ bannerText }}</p>
     </div>
     <div class="banner-search">
-        <input type="text" name="search" placeholder="Search product">
-        <button>Search</button>
+        <input type="text" name="search" placeholder="Search product" #searchValue>
+        <button (click)="onSearchClicked(searchValue.value)">Search</button>
     </div>
 </div>

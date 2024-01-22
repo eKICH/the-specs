@@ -2,7 +2,12 @@
     <div class="product-model">
         <h4>{{selectedProduct?.model}}</h4>
         <p>{{selectedProduct?.desc}} - {{ selectedProduct?.category}}</p>
+        <div class="prod-img">
+            <img [src]="selectedProduct?.imgUrl">
+        </div>
     </div>
+
+    
 
     <div class="specs-features">
         
@@ -18,10 +23,6 @@
             <ul *ngFor="let specs of selectedProduct?.specs">
                 <li>{{specs}}</li>
             </ul>
-        </div>
-
-        <div class="prod-img">
-            <img [src]="selectedProduct?.imgUrl">
         </div>
     </div>
 </div>

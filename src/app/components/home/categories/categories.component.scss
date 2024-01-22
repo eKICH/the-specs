@@ -19,6 +19,7 @@
 .categories {
     margin: 40px 0 50px 0;
     display: flex;
+    justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
 
@@ -43,4 +44,13 @@
 
 .category-item:hover {
     transform: scale(1.1);
+}
+
+@media screen and (min-width: 700px) {
+    .categories-banner {
+        
+        .categories {
+            justify-content: center;
+        }
+    }
 }

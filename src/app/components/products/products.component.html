@@ -3,13 +3,17 @@
 
         @for (prod of products; track $index) {
         <div class="product-item">
-            <img src={{prod.imgUrl}}>
+            <img [src]="prod.imgUrl">
             <div class="content">
                 <h4>{{ prod.model }}</h4>
                 <p>{{ prod.desc}}</p>
                 <a [routerLink]="'/products/product/' + prod.id">View Specs</a>
             </div>
         </div>
+        } @empty {
+            <div class="not-found">
+                <p>No Product Found!</p>
+            </div>
         }
     </div>
 </div>

@@ -1,9 +1,19 @@
-<div class="top--nav">
-    <h2>the Specs</h2>
+<nav>
+    <label for="check" class="btn">
+        <i class="las la-bars" id="menu" (click)="toggleIcon()"></i>
+    </label>
+    <input type="checkbox" id="check">
 
-    <div class="header-links">
-        <a [routerLink]="'home'" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">Home</a>
-        <a [routerLink]="'products'" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">Products</a>
-    </div>
-
-</div>
+    <label class="logo">the Specs</label>
+    <ul>
+        <li>
+            <a [routerLink]="'home'" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" (click)="linkClicked()">Home
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="'products'" [routerLinkActive]="'active'"
+                [routerLinkActiveOptions]="{exact: true}" (click)="linkClicked()">Products
+            </a>
+        </li>
+    </ul>
+</nav>
