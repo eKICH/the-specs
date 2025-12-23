@@ -1,5 +1,5 @@
 # The Spec
-[![Live Demo](https://img.shields.io/badge/demo-online-brightgreen)](https://ekich.github.io/the-specs/home)
+[![Live Demo](https://img.shields.io/badge/demo-online-brightgreen)](https://ekich.github.io/the-specs)
 
 [![CI](https://github.com/eKICH/the-specs/deployments)]
 
